@@ -9,7 +9,7 @@ Live websie link: (https://service-provider-assign-10.web.app/).
 * home page have picture, name, button and description about Gym site.
 * At the end of the navbar have a login button.
 ## use this is project:
-- use firebase to build authentication and hostig.
+- use firebase to build authentication and hosting.
 - use react router
 * use react bootstrap
 * use react firebase hooks etc.
