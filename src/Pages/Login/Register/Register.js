@@ -8,7 +8,7 @@ import Loading from '../../Shared/Loading/Loading';
 
 const Register = () => {
 
-    const [agree, setAgree] = useState('false');
+    const [agree, setAgree] = useState(false);
 
     const [
         createUserWithEmailAndPassword,
@@ -16,6 +16,7 @@ const Register = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
@@ -27,19 +28,15 @@ const Register = () => {
         return <Loading></Loading>
     }
 
-    if (user) {
-        console.log('user',user);
-    }
-
     const handleRegister = async event => {
         event.preventDefault();
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
+      
  
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName:name });
-          console.log('Updated profile');
           navigate('/home')
 
     }
@@ -57,9 +54,9 @@ const Register = () => {
 
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
                 
-                <label className={`ps-2 ${!agree ? "" : "text-danger"}`} htmlFor="terms">Accept Gym Condition</label>
+                <label className={`ps-2 ${agree ? "" : "text-danger"}`} htmlFor="terms">Accept Gym Condition</label>
                 <input
-                    disabled={agree}
+                    disabled={!agree}
                     className='w-50 mx-auto btn btn-primary'
                     type="submit"
                     value="Register" />
