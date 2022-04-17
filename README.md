@@ -2,8 +2,18 @@
 
 ### Gym Center
 Live websie link: (https://service-provider-assign-10.web.app/).
-- hello
-* hello
+## Description:
+- I am creating navbar and set react route.
+- Blogs component have three question about firebase.
+* About component have my personal information.
+* home page have picture, name, button and description about Gym site.
+* At the end of the navbar have a login button.
+## use this is project:
+- use firebase to build authentication and hostig.
+- use react router
+* use react bootstrap
+* use react firebase hooks etc.
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
