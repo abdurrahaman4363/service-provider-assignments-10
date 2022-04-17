@@ -5,6 +5,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -41,27 +43,24 @@ const Login = () => {
     }
 
     const handleSumit = event => {
-        event.priventDefault();
+        event.preventDefault();
         const email = emailRef.current.value;
         const Password = PasswordRef.current.value;
         console.log(email, Password);
 
         signInWithEmailAndPassword(email, Password)
     }
-    const navigateRegister = event => {
-        navigate('/register')
-    }
 
-   /*  const resetPassword = async () => {
+    const resetPassword = async () => {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
             toast('Sent email');
         }
         else {
-            toast('Plsese enter your email address')
+           toast('Plsese enter your email address')
         }
-    } */
+    }
 
    
     return (
@@ -84,10 +83,10 @@ const Login = () => {
             {errorElement}
             
             <p>New to Gym? <Link to='/register' className='text-danger pe-auto text-decoration-none'>Please Register</Link></p>
-            <p>Forget Password? <button  className='text-danger btn btn-link pe-auto text-decoration-none'>Reset Password</button></p>
+            <p>Forget Password? <button onClick={resetPassword}  className='text-danger btn btn-link pe-auto text-decoration-none'>Reset Password</button></p>
             <SocialLogin></SocialLogin>
-            {/* onClick={resetPassword} */}
-            
+            <ToastContainer />
+        
         </div>
     );
 };

@@ -63,7 +63,6 @@ const Register = () => {
 
             </form>
             <p>Alreday have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
-            
             <SocialLogin></SocialLogin>
         </div>
     );
