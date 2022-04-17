@@ -41,18 +41,6 @@ const SocialLogin = () => {
                     <img style={{ width: '50px' }} src={google} alt="" />
                     <span className='px-2'>Google Sign In</span>
                 </button>
-
-                <button className='btn btn-info d-block w-50 mx-auto my-2'>
-                    <img style={{ width: '30px' }} src={facebook} alt="" />
-                    <span className='px-2'>Facebook Sign In</span>
-                </button>
-                <button
-                    onClick={() => signInWithGithub()}
-                    className='btn btn-info d-block w-50 mx-auto'>
-                    <img style={{ width: '40px' }} src={github} alt="" />
-                    <span className='px-2'>Github Sign In</span>
-                </button>
-
             </div>
         </div>
     );

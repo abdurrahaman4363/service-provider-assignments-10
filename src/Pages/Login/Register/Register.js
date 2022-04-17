@@ -36,12 +36,7 @@ const Register = () => {
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
-        // const agree = event.target.terms.checked;
-
-        /*  if(!agree){
-             createUserWithEmailAndPassword(email,password);
-         }
- */
+ 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName:name });
           console.log('Updated profile');
@@ -61,8 +56,8 @@ const Register = () => {
                 <input type="password" name="password" id="" placeholder='Password' required />
 
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-                {/* <label className={ !agree ? 'ps-2':'ps-2 text-danger'} htmlFor="terms">Accept Genius Terms and Condition</label> */}
-                <label className={`ps-2 ${!agree ? "" : "text-danger"}`} htmlFor="terms">Accept Genius Terms and Condition</label>
+                
+                <label className={`ps-2 ${!agree ? "" : "text-danger"}`} htmlFor="terms">Accept Gym Condition</label>
                 <input
                     disabled={agree}
                     className='w-50 mx-auto btn btn-primary'
@@ -71,7 +66,7 @@ const Register = () => {
 
             </form>
             <p>Alreday have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link></p>
-            {/* <p>Alreday have an account? <Link to='/login' className='text-danger pe-auto text-decoration-none'>Please Login</Link></p> */}
+            
             <SocialLogin></SocialLogin>
         </div>
     );

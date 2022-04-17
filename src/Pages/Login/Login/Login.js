@@ -27,7 +27,6 @@ const Login = () => {
         event.priventDefault();
         const email = emailRef.current.value;
         const Password = PasswordRef.current.value;
-        console.log(email, Password);
 
         signInWithEmailAndPassword(email, Password)
     }
@@ -51,8 +50,8 @@ const Login = () => {
                 </Button>
             </Form>
 
-            {/* <p>New to Genius Car? <span className='text-danger' onClick={navigateRegister}>Please Register</span></p> */}
-            <p>New to Genius Car? <Link to='/register' className='text-danger pe-auto text-decoration-none'>Please Register</Link></p>
+            
+            <p>New to Gym? <Link to='/register' className='text-danger pe-auto text-decoration-none'>Please Register</Link></p>
             <p>Forget Password? <button className='text-danger btn btn-link pe-auto text-decoration-none'>Reset Password</button></p>
             <SocialLogin></SocialLogin>
             
