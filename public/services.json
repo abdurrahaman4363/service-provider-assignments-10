@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Gym Stock",
+        "price": "3500",
+        "description":"A complementary piece to the squat rack",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcrF--hOnWj6-aeh0vmfIbxkQmM2HQoVHQqg&usqp=CAU"
+    },
+    {
+        "id": 2,
+        "name": "Premium High Res",
+        "price": "3000",
+        "description": "A barbell is essential to strength training",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZWrcdBxFUPxyatHy31ry4is4FRt7FdGZDjw&usqp=CAU"
+    },
+    {
+        "id": 3,
+        "name": "Pretty much all muscles",
+        "price": "2500",
+        "description": "it holds the free weights",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc7QRj0ng0N7uduKXONOu315wr57BQU5q3NA&usqp=CAU"
+    },
+    {
+        "id": 4,
+        "name": "training with barbells",
+        "price": "2000",
+        "description": "the weights are attached to the ends.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2e6_ch7hsREY9QwbEp0WW_H4NMOwL5jqhrg&usqp=CAU"
+    },
+    {
+        "id": 5,
+        "name": "body stays stabilized",
+        "price": "1500",
+        "description":"the weights are attached to the ends.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1Tz56FGr99lTLjZX5ZjxQfF5WEldgfjXGLQ&usqp=CAU"
+    },
+    {
+        "id": 6,
+        "name": "strength training",
+        "price": "1000",
+        "description": "It is critical to keep good form when doing barbell exercises.",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHupcBMcGVZjJ_rfInKo02zhWb4o0b6euBcQ&usqp=CAU"
+    }
+]
