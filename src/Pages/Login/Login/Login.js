@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
@@ -31,6 +31,8 @@ const Login = () => {
 
         signInWithEmailAndPassword(email, Password)
     }
+
+   
     return (
         <div className='container w-50 mx-auto'>
             <h2 className='text-primary text-center my-3'>Please Login</h2>
@@ -48,6 +50,10 @@ const Login = () => {
                     Login
                 </Button>
             </Form>
+
+            {/* <p>New to Genius Car? <span className='text-danger' onClick={navigateRegister}>Please Register</span></p> */}
+            <p>New to Genius Car? <Link to='/register' className='text-danger pe-auto text-decoration-none'>Please Register</Link></p>
+            <p>Forget Password? <button className='text-danger btn btn-link pe-auto text-decoration-none'>Reset Password</button></p>
             <SocialLogin></SocialLogin>
             
         </div>
