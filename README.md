@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-### Gym Center
+## Gym Center
 Live websie link: (https://service-provider-assign-10.web.app/).
 ## Description:
 - I am creating navbar and set react route.
@@ -8,11 +8,12 @@ Live websie link: (https://service-provider-assign-10.web.app/).
 * About component have my personal information.
 * home page have picture, name, button and description about Gym site.
 * At the end of the navbar have a login button.
-## use this is project:
+## use this project:
 - use firebase to build authentication and hosting.
 - use react router
 * use react bootstrap
-* use react firebase hooks etc.
+* use react firebase hooks 
+* react toastify use etc.
 
 
 
